@@ -1,0 +1,277 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Model0 = Instance.new("Model")
+Part1 = Instance.new("Part")
+SpecialMesh2 = Instance.new("SpecialMesh")
+Decal3 = Instance.new("Decal")
+Part4 = Instance.new("Part")
+Motor6D5 = Instance.new("Motor6D")
+Part6 = Instance.new("Part")
+Part7 = Instance.new("Part")
+Part8 = Instance.new("Part")
+Part9 = Instance.new("Part")
+Part10 = Instance.new("Part")
+Decal11 = Instance.new("Decal")
+Motor6D12 = Instance.new("Motor6D")
+Motor6D13 = Instance.new("Motor6D")
+Motor6D14 = Instance.new("Motor6D")
+Motor6D15 = Instance.new("Motor6D")
+Motor6D16 = Instance.new("Motor6D")
+Humanoid17 = Instance.new("Humanoid")
+Accessory18 = Instance.new("Accessory")
+Part19 = Instance.new("Part")
+SpecialMesh20 = Instance.new("SpecialMesh")
+Fire21 = Instance.new("Fire")
+Weld22 = Instance.new("Weld")
+Camera23 = Instance.new("Camera")
+BodyColors24 = Instance.new("BodyColors")
+Shirt25 = Instance.new("Shirt")
+ShirtGraphic26 = Instance.new("ShirtGraphic")
+Script27 = Instance.new("Script")
+Model0.Name = "Training Dummy"
+Model0.Parent = mas
+Model0.PrimaryPart = Part4
+Part1.Name = "Head"
+Part1.Parent = Model0
+Part1.CFrame = CFrame.new(-28, 4.5, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1.Position = Vector3.new(-28, 4.5, 8.5)
+Part1.Color = Color3.new(0.972549, 0.972549, 0.972549)
+Part1.Size = Vector3.new(2, 1, 1)
+Part1.BrickColor = BrickColor.new("Institutional white")
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.brickColor = BrickColor.new("Institutional white")
+Part1.FormFactor = Enum.FormFactor.Symmetric
+Part1.formFactor = Enum.FormFactor.Symmetric
+SpecialMesh2.Parent = Part1
+SpecialMesh2.Scale = Vector3.new(1.25, 1.25, 1.25)
+Decal3.Name = "face"
+Decal3.Parent = Part1
+Decal3.Texture = "rbxasset://textures/face.png"
+Part4.Name = "HumanoidRootPart"
+Part4.Parent = Model0
+Part4.CFrame = CFrame.new(-28, 3, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part4.Position = Vector3.new(-28, 3, 8.5)
+Part4.Transparency = 1
+Part4.Size = Vector3.new(2, 2, 1)
+Part4.BottomSurface = Enum.SurfaceType.Smooth
+Part4.CanCollide = false
+Part4.LeftParamA = 0
+Part4.LeftParamB = 0
+Part4.RightParamA = 0
+Part4.RightParamB = 0
+Part4.TopSurface = Enum.SurfaceType.Smooth
+Part4.FormFactor = Enum.FormFactor.Symmetric
+Part4.formFactor = Enum.FormFactor.Symmetric
+Motor6D5.Name = "RootJoint"
+Motor6D5.Parent = Part4
+Motor6D5.MaxVelocity = 0.10000000149011612
+Motor6D5.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D5.C1 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D5.Part0 = Part4
+Motor6D5.Part1 = Part10
+Motor6D5.part1 = Part10
+Part6.Name = "Left Arm"
+Part6.Parent = Model0
+Part6.CFrame = CFrame.new(-29.5, 3, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part6.Position = Vector3.new(-29.5, 3, 8.5)
+Part6.Color = Color3.new(0.972549, 0.972549, 0.972549)
+Part6.Size = Vector3.new(1, 2, 1)
+Part6.BrickColor = BrickColor.new("Institutional white")
+Part6.CanCollide = false
+Part6.brickColor = BrickColor.new("Institutional white")
+Part6.FormFactor = Enum.FormFactor.Symmetric
+Part6.formFactor = Enum.FormFactor.Symmetric
+Part7.Name = "Left Leg"
+Part7.Parent = Model0
+Part7.CFrame = CFrame.new(-28.5, 1, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part7.Position = Vector3.new(-28.5, 1, 8.5)
+Part7.Size = Vector3.new(1, 2, 1)
+Part7.BottomSurface = Enum.SurfaceType.Smooth
+Part7.CanCollide = false
+Part7.FormFactor = Enum.FormFactor.Symmetric
+Part7.formFactor = Enum.FormFactor.Symmetric
+Part8.Name = "Right Arm"
+Part8.Parent = Model0
+Part8.CFrame = CFrame.new(-26.5, 3, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part8.Position = Vector3.new(-26.5, 3, 8.5)
+Part8.Color = Color3.new(0.972549, 0.972549, 0.972549)
+Part8.Size = Vector3.new(1, 2, 1)
+Part8.BrickColor = BrickColor.new("Institutional white")
+Part8.CanCollide = false
+Part8.brickColor = BrickColor.new("Institutional white")
+Part8.FormFactor = Enum.FormFactor.Symmetric
+Part8.formFactor = Enum.FormFactor.Symmetric
+Part9.Name = "Right Leg"
+Part9.Parent = Model0
+Part9.CFrame = CFrame.new(-27.5, 1, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part9.Position = Vector3.new(-27.5, 1, 8.5)
+Part9.Size = Vector3.new(1, 2, 1)
+Part9.BottomSurface = Enum.SurfaceType.Smooth
+Part9.CanCollide = false
+Part9.FormFactor = Enum.FormFactor.Symmetric
+Part9.formFactor = Enum.FormFactor.Symmetric
+Part10.Name = "Torso"
+Part10.Parent = Model0
+Part10.CFrame = CFrame.new(-28, 3, 8.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part10.Position = Vector3.new(-28, 3, 8.5)
+Part10.Color = Color3.new(0.972549, 0.85098, 0.427451)
+Part10.Size = Vector3.new(2, 2, 1)
+Part10.BrickColor = BrickColor.new("Daisy orange")
+Part10.LeftParamA = 0
+Part10.LeftParamB = 0
+Part10.LeftSurface = Enum.SurfaceType.Weld
+Part10.RightParamA = 0
+Part10.RightParamB = 0
+Part10.RightSurface = Enum.SurfaceType.Weld
+Part10.brickColor = BrickColor.new("Daisy orange")
+Part10.FormFactor = Enum.FormFactor.Symmetric
+Part10.formFactor = Enum.FormFactor.Symmetric
+Decal11.Name = "roblox"
+Decal11.Parent = Part10
+Decal11.Texture = "http://www.roblox.com/asset/?id=7446042702"
+Motor6D12.Name = "Right Shoulder"
+Motor6D12.Parent = Part10
+Motor6D12.MaxVelocity = 0.10000000149011612
+Motor6D12.C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D12.C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D12.Part0 = Part10
+Motor6D12.Part1 = Part8
+Motor6D12.part1 = Part8
+Motor6D13.Name = "Right Hip"
+Motor6D13.Parent = Part10
+Motor6D13.MaxVelocity = 0.10000000149011612
+Motor6D13.C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D13.C1 = CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D13.Part0 = Part10
+Motor6D13.Part1 = Part9
+Motor6D13.part1 = Part9
+Motor6D14.Name = "Neck"
+Motor6D14.Parent = Part10
+Motor6D14.MaxVelocity = 0.10000000149011612
+Motor6D14.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D14.C1 = CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D14.Part0 = Part10
+Motor6D14.Part1 = Part1
+Motor6D14.part1 = Part1
+Motor6D15.Name = "Left Shoulder"
+Motor6D15.Parent = Part10
+Motor6D15.MaxVelocity = 0.10000000149011612
+Motor6D15.C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D15.C1 = CFrame.new(0.5, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D15.Part0 = Part10
+Motor6D15.Part1 = Part6
+Motor6D15.part1 = Part6
+Motor6D16.Name = "Left Hip"
+Motor6D16.Parent = Part10
+Motor6D16.MaxVelocity = 0.10000000149011612
+Motor6D16.C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D16.C1 = CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D16.Part0 = Part10
+Motor6D16.Part1 = Part7
+Motor6D16.part1 = Part7
+Humanoid17.Parent = Model0
+Humanoid17.LeftLeg = Part7
+Humanoid17.RightLeg = Part9
+Humanoid17.Torso = Part4
+Humanoid17.DisplayName = "VieLk"
+Accessory18.Name = "HTTYD-HiccupsHelmet"
+Accessory18.Parent = Model0
+Accessory18.AttachmentPoint = CFrame.new(0, -0.600000024, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Accessory18.AttachmentPos = Vector3.new(0, -0.6000000238418579, 0)
+Part19.Name = "Handle"
+Part19.Parent = Accessory18
+Part19.CFrame = CFrame.new(-28, 5.5999999, 8.5002718, 1, -7.87137555e-09, 0, 7.87137555e-09, 1, 4.1444221e-16, -3.26223034e-24, -4.1444221e-16, 1)
+Part19.Position = Vector3.new(-28, 5.599999904632568, 8.500271797180176)
+Part19.Size = Vector3.new(1, 0.800000011920929, 1)
+Part19.BottomSurface = Enum.SurfaceType.Smooth
+Part19.CanCollide = false
+Part19.TopSurface = Enum.SurfaceType.Smooth
+Part19.FormFactor = Enum.FormFactor.Plate
+Part19.formFactor = Enum.FormFactor.Plate
+SpecialMesh20.Parent = Part19
+SpecialMesh20.MeshId = "http://www.roblox.com/asset/?id=254687534"
+SpecialMesh20.Scale = Vector3.new(3, 3, 3)
+SpecialMesh20.TextureId = "http://www.roblox.com/asset/?id=254687337"
+SpecialMesh20.MeshType = Enum.MeshType.FileMesh
+Fire21.Parent = Part19
+Fire21.Size = 2
+Fire21.Heat = 2
+Fire21.size = 2
+Weld22.Name = "AccessoryWeld"
+Weld22.Parent = Part19
+Weld22.C0 = CFrame.new(8.65838956e-09, -0.5, -0.000272244215, 1, 7.87137555e-09, -3.26223034e-24, -7.87137555e-09, 1, -4.1444221e-16, 0, 4.1444221e-16, 1)
+Weld22.C1 = CFrame.new(0, 0.600000024, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld22.Part0 = Part19
+Weld22.Part1 = Part1
+Weld22.part1 = Part1
+Camera23.Name = "ThumbnailCamera"
+Camera23.Parent = Accessory18
+Camera23.CFrame = CFrame.new(0.85944891, 17.5356922, 20.2180672, -0.901830435, -0.0451647826, 0.429723382, -0, 0.994522274, 0.104526259, -0.432090312, 0.0942649618, -0.896890283)
+Camera23.CoordinateFrame = CFrame.new(0.85944891, 17.5356922, 20.2180672, -0.901830435, -0.0451647826, 0.429723382, -0, 0.994522274, 0.104526259, -0.432090312, 0.0942649618, -0.896890283)
+Camera23.Focus = CFrame.new(0, 17.3266392, 22.0118523, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Camera23.focus = CFrame.new(0, 17.3266392, 22.0118523, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+BodyColors24.Parent = Model0
+BodyColors24.HeadColor = BrickColor.new("Institutional white")
+BodyColors24.HeadColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+BodyColors24.LeftArmColor = BrickColor.new("Institutional white")
+BodyColors24.LeftArmColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+BodyColors24.LeftLegColor = BrickColor.new("Medium stone grey")
+BodyColors24.LeftLegColor3 = Color3.new(0.639216, 0.635294, 0.647059)
+BodyColors24.RightArmColor = BrickColor.new("Institutional white")
+BodyColors24.RightArmColor3 = Color3.new(0.972549, 0.972549, 0.972549)
+BodyColors24.RightLegColor = BrickColor.new("Medium stone grey")
+BodyColors24.RightLegColor3 = Color3.new(0.639216, 0.635294, 0.647059)
+BodyColors24.TorsoColor = BrickColor.new("Daisy orange")
+BodyColors24.TorsoColor3 = Color3.new(0.972549, 0.85098, 0.427451)
+Shirt25.Name = "Shirt"
+Shirt25.Parent = Model0
+Shirt25.ShirtTemplate = "http://www.roblox.com/asset/?id=231005485"
+ShirtGraphic26.Parent = Model0
+ShirtGraphic26.Graphic = "http://www.roblox.com/asset/?id=7446042702"
+Script27.Name = "Respawn"
+Script27.Parent = Model0
+table.insert(cors,sandbox(Script27,function()
+name="Humanoid"
+
+robo=script.Parent:clone()
+
+while true do
+	wait(1)
+	if script.Parent.Humanoid.Health<1 then
+		robot=robo:clone()
+		robot.Parent=script.Parent.Parent
+		robot:makeJoints()
+		script.Parent:remove()
+	end
+end
+		
+
+
+
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = workspace
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
