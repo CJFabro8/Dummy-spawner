@@ -1,0 +1,363 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Model0 = Instance.new("Model")
+Part1 = Instance.new("Part")
+Decal2 = Instance.new("Decal")
+SpecialMesh3 = Instance.new("SpecialMesh")
+StringValue4 = Instance.new("StringValue")
+Vector3Value5 = Instance.new("Vector3Value")
+Vector3Value6 = Instance.new("Vector3Value")
+Vector3Value7 = Instance.new("Vector3Value")
+Vector3Value8 = Instance.new("Vector3Value")
+Vector3Value9 = Instance.new("Vector3Value")
+Weld10 = Instance.new("Weld")
+Part11 = Instance.new("Part")
+Motor6D12 = Instance.new("Motor6D")
+Part13 = Instance.new("Part")
+Part14 = Instance.new("Part")
+Part15 = Instance.new("Part")
+Part16 = Instance.new("Part")
+Part17 = Instance.new("Part")
+Decal18 = Instance.new("Decal")
+Motor6D19 = Instance.new("Motor6D")
+Motor6D20 = Instance.new("Motor6D")
+Motor6D21 = Instance.new("Motor6D")
+Motor6D22 = Instance.new("Motor6D")
+Motor6D23 = Instance.new("Motor6D")
+Humanoid24 = Instance.new("Humanoid")
+Accessory25 = Instance.new("Accessory")
+Part26 = Instance.new("Part")
+SpecialMesh27 = Instance.new("SpecialMesh")
+StringValue28 = Instance.new("StringValue")
+ParticleEmitter29 = Instance.new("ParticleEmitter")
+ParticleEmitter30 = Instance.new("ParticleEmitter")
+Weld31 = Instance.new("Weld")
+CharacterMesh32 = Instance.new("CharacterMesh")
+CharacterMesh33 = Instance.new("CharacterMesh")
+CharacterMesh34 = Instance.new("CharacterMesh")
+CharacterMesh35 = Instance.new("CharacterMesh")
+CharacterMesh36 = Instance.new("CharacterMesh")
+BodyColors37 = Instance.new("BodyColors")
+Shirt38 = Instance.new("Shirt")
+Pants39 = Instance.new("Pants")
+Script40 = Instance.new("Script")
+Model0.Name = "Training Dummy"
+Model0.Parent = mas
+Model0.PrimaryPart = Part11
+Part1.Name = "Head"
+Part1.Parent = Model0
+Part1.CFrame = CFrame.new(-17, 4.5, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part1.Position = Vector3.new(-17, 4.5, 4.5)
+Part1.Color = Color3.new(0.917647, 0.721569, 0.572549)
+Part1.Size = Vector3.new(2, 1, 1)
+Part1.BrickColor = BrickColor.new("Light orange")
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.brickColor = BrickColor.new("Light orange")
+Part1.FormFactor = Enum.FormFactor.Symmetric
+Part1.formFactor = Enum.FormFactor.Symmetric
+Decal2.Name = "face"
+Decal2.Parent = Part1
+Decal2.Texture = "rbxasset://textures/face.png"
+SpecialMesh3.Parent = Part1
+SpecialMesh3.MeshId = "https://www.roblox.com/asset/?id=3345268106"
+SpecialMesh3.TextureId = "http://roblox.com/asset/?id=3345268140"
+SpecialMesh3.MeshType = Enum.MeshType.FileMesh
+StringValue4.Name = "AvatarPartScaleType"
+StringValue4.Parent = SpecialMesh3
+StringValue4.Value = "ProportionsSlender"
+Vector3Value5.Name = "NeckRigAttachment"
+Vector3Value5.Parent = SpecialMesh3
+Vector3Value5.Value = Vector3.new(-0.004339843988418579, -0.055051565170288086, 0.2387445569038391)
+Vector3Value6.Name = "FaceFrontAttachment"
+Vector3Value6.Parent = SpecialMesh3
+Vector3Value6.Value = Vector3.new(-0.004339843522757292, -0.19916045665740967, -0.3043428063392639)
+Vector3Value7.Name = "HatAttachment"
+Vector3Value7.Parent = SpecialMesh3
+Vector3Value7.Value = Vector3.new(-0.004339843522757292, 0.3473895788192749, -0.12477661669254303)
+Vector3Value8.Name = "HairAttachment"
+Vector3Value8.Parent = SpecialMesh3
+Vector3Value8.Value = Vector3.new(-0.004339843522757292, 0.3473895788192749, -0.12477661669254303)
+Vector3Value9.Name = "FaceCenterAttachment"
+Vector3Value9.Parent = SpecialMesh3
+Vector3Value9.Value = Vector3.new(-0.004339843522757292, -0.2995305061340332, -0.06965804100036621)
+Weld10.Name = "HeadWeld"
+Weld10.Parent = Part1
+Weld10.C0 = CFrame.new(0, 0.5, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld10.C1 = CFrame.new(0.0155530013, 0.0697362423, -0.231207669, 1, 9.94268714e-17, 7.14975349e-17, -1.21242258e-16, 0.721494079, 0.692420721, 1.7260174e-17, -0.692420721, 0.721494079)
+Weld10.Part0 = Part1
+Weld10.Part1 = Part26
+Weld10.part1 = Part26
+Part11.Name = "HumanoidRootPart"
+Part11.Parent = Model0
+Part11.CFrame = CFrame.new(-17, 3, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part11.Position = Vector3.new(-17, 3, 4.5)
+Part11.Transparency = 1
+Part11.Size = Vector3.new(2, 2, 1)
+Part11.BottomSurface = Enum.SurfaceType.Smooth
+Part11.CanCollide = false
+Part11.LeftParamA = 0
+Part11.LeftParamB = 0
+Part11.RightParamA = 0
+Part11.RightParamB = 0
+Part11.TopSurface = Enum.SurfaceType.Smooth
+Part11.FormFactor = Enum.FormFactor.Symmetric
+Part11.formFactor = Enum.FormFactor.Symmetric
+Motor6D12.Name = "RootJoint"
+Motor6D12.Parent = Part11
+Motor6D12.MaxVelocity = 0.10000000149011612
+Motor6D12.C0 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D12.C1 = CFrame.new(0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D12.Part0 = Part11
+Motor6D12.Part1 = Part17
+Motor6D12.part1 = Part17
+Part13.Name = "Left Arm"
+Part13.Parent = Model0
+Part13.CFrame = CFrame.new(-18.5, 3, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part13.Position = Vector3.new(-18.5, 3, 4.5)
+Part13.Color = Color3.new(0.917647, 0.721569, 0.572549)
+Part13.Size = Vector3.new(1, 2, 1)
+Part13.BrickColor = BrickColor.new("Light orange")
+Part13.CanCollide = false
+Part13.brickColor = BrickColor.new("Light orange")
+Part13.FormFactor = Enum.FormFactor.Symmetric
+Part13.formFactor = Enum.FormFactor.Symmetric
+Part14.Name = "Left Leg"
+Part14.Parent = Model0
+Part14.CFrame = CFrame.new(-17.5, 1, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part14.Position = Vector3.new(-17.5, 1, 4.5)
+Part14.Color = Color3.new(0.917647, 0.721569, 0.572549)
+Part14.Size = Vector3.new(1, 2, 1)
+Part14.BottomSurface = Enum.SurfaceType.Smooth
+Part14.BrickColor = BrickColor.new("Light orange")
+Part14.CanCollide = false
+Part14.brickColor = BrickColor.new("Light orange")
+Part14.FormFactor = Enum.FormFactor.Symmetric
+Part14.formFactor = Enum.FormFactor.Symmetric
+Part15.Name = "Right Arm"
+Part15.Parent = Model0
+Part15.CFrame = CFrame.new(-15.5, 3, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part15.Position = Vector3.new(-15.5, 3, 4.5)
+Part15.Color = Color3.new(0.917647, 0.721569, 0.572549)
+Part15.Size = Vector3.new(1, 2, 1)
+Part15.BrickColor = BrickColor.new("Light orange")
+Part15.CanCollide = false
+Part15.brickColor = BrickColor.new("Light orange")
+Part15.FormFactor = Enum.FormFactor.Symmetric
+Part15.formFactor = Enum.FormFactor.Symmetric
+Part16.Name = "Right Leg"
+Part16.Parent = Model0
+Part16.CFrame = CFrame.new(-16.5, 1, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part16.Position = Vector3.new(-16.5, 1, 4.5)
+Part16.Color = Color3.new(0.917647, 0.721569, 0.572549)
+Part16.Size = Vector3.new(1, 2, 1)
+Part16.BottomSurface = Enum.SurfaceType.Smooth
+Part16.BrickColor = BrickColor.new("Light orange")
+Part16.CanCollide = false
+Part16.brickColor = BrickColor.new("Light orange")
+Part16.FormFactor = Enum.FormFactor.Symmetric
+Part16.formFactor = Enum.FormFactor.Symmetric
+Part17.Name = "Torso"
+Part17.Parent = Model0
+Part17.CFrame = CFrame.new(-17, 3, 4.5, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Part17.Position = Vector3.new(-17, 3, 4.5)
+Part17.Color = Color3.new(0.917647, 0.721569, 0.572549)
+Part17.Size = Vector3.new(2, 2, 1)
+Part17.BrickColor = BrickColor.new("Light orange")
+Part17.LeftParamA = 0
+Part17.LeftParamB = 0
+Part17.LeftSurface = Enum.SurfaceType.Weld
+Part17.RightParamA = 0
+Part17.RightParamB = 0
+Part17.RightSurface = Enum.SurfaceType.Weld
+Part17.brickColor = BrickColor.new("Light orange")
+Part17.FormFactor = Enum.FormFactor.Symmetric
+Part17.formFactor = Enum.FormFactor.Symmetric
+Decal18.Name = "roblox"
+Decal18.Parent = Part17
+Motor6D19.Name = "Right Shoulder"
+Motor6D19.Parent = Part17
+Motor6D19.MaxVelocity = 0.10000000149011612
+Motor6D19.C0 = CFrame.new(1, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D19.C1 = CFrame.new(-0.5, 0.5, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D19.Part0 = Part17
+Motor6D19.Part1 = Part15
+Motor6D19.part1 = Part15
+Motor6D20.Name = "Right Hip"
+Motor6D20.Parent = Part17
+Motor6D20.MaxVelocity = 0.10000000149011612
+Motor6D20.C0 = CFrame.new(1, -1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D20.C1 = CFrame.new(0.5, 1, 0, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+Motor6D20.Part0 = Part17
+Motor6D20.Part1 = Part16
+Motor6D20.part1 = Part16
+Motor6D21.Name = "Neck"
+Motor6D21.Parent = Part17
+Motor6D21.MaxVelocity = 0.10000000149011612
+Motor6D21.C0 = CFrame.new(0, 1, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D21.C1 = CFrame.new(0, -0.5, 0, -1, 0, 0, 0, 0, 1, 0, 1, -0)
+Motor6D21.Part0 = Part17
+Motor6D21.Part1 = Part1
+Motor6D21.part1 = Part1
+Motor6D22.Name = "Left Shoulder"
+Motor6D22.Parent = Part17
+Motor6D22.MaxVelocity = 0.10000000149011612
+Motor6D22.C0 = CFrame.new(-1, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D22.C1 = CFrame.new(0.5, 0.5, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D22.Part0 = Part17
+Motor6D22.Part1 = Part13
+Motor6D22.part1 = Part13
+Motor6D23.Name = "Left Hip"
+Motor6D23.Parent = Part17
+Motor6D23.MaxVelocity = 0.10000000149011612
+Motor6D23.C0 = CFrame.new(-1, -1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D23.C1 = CFrame.new(-0.5, 1, 0, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+Motor6D23.Part0 = Part17
+Motor6D23.Part1 = Part14
+Motor6D23.part1 = Part14
+Humanoid24.Parent = Model0
+Humanoid24.LeftLeg = Part14
+Humanoid24.RightLeg = Part16
+Humanoid24.Torso = Part11
+Humanoid24.DisplayName = "Display19d"
+Accessory25.Name = "MushroomHatAccessory"
+Accessory25.Parent = Model0
+Accessory25.AttachmentForward = Vector3.new(-7.149753491703326e-17, -0.6924207210540771, -0.7214940786361694)
+Accessory25.AttachmentPoint = CFrame.new(0.0155530013, 0.0697362423, -0.231207669, 1, 9.94268714e-17, 7.14975349e-17, -1.21242258e-16, 0.721494079, 0.692420721, 1.7260174e-17, -0.692420721, 0.721494079)
+Accessory25.AttachmentPos = Vector3.new(0.015553001314401627, 0.06973624229431152, -0.23120766878128052)
+Accessory25.AttachmentRight = Vector3.new(1, -1.2124225789695122e-16, 1.7260174000296865e-17)
+Accessory25.AttachmentUp = Vector3.new(9.942687140085751e-17, 0.7214940786361694, -0.6924207210540771)
+Part26.Name = "Handle"
+Part26.Parent = Accessory25
+Part26.CFrame = CFrame.new(-17.0155525, 4.88959265, 4.61852837, 1, -1.21242258e-16, 1.7260174e-17, 9.9426878e-17, 0.721494079, -0.692420721, 7.14975415e-17, 0.692420721, 0.721494079)
+Part26.Orientation = Vector3.new(43.81999969482422, 0, 0)
+Part26.Position = Vector3.new(-17.015552520751953, 4.88959264755249, 4.618528366088867)
+Part26.Rotation = Vector3.new(43.81999969482422, 0, 0)
+Part26.Size = Vector3.new(1, 1, 1)
+Part26.BottomSurface = Enum.SurfaceType.Smooth
+Part26.CanCollide = false
+Part26.Locked = true
+Part26.TopSurface = Enum.SurfaceType.Smooth
+SpecialMesh27.Name = "SpecialMesh"
+SpecialMesh27.Parent = Part26
+SpecialMesh27.MeshId = "rbxassetid://3345527560"
+SpecialMesh27.TextureId = "rbxassetid://3345527702"
+SpecialMesh27.MeshType = Enum.MeshType.FileMesh
+StringValue28.Name = "AvatarPartScaleType"
+StringValue28.Parent = Part26
+StringValue28.Value = "ProportionsSlender"
+ParticleEmitter29.Name = "ChestEmitter"
+ParticleEmitter29.Parent = Part26
+ParticleEmitter29.Speed = NumberRange.new(0, 0)
+ParticleEmitter29.Color = ColorSequence.new(Color3.new(0.470588, 0.913725, 1),Color3.new(0.470588, 0.913725, 1))
+ParticleEmitter29.LightEmission = 0.5
+ParticleEmitter29.Texture = "rbxasset://textures/particles/explosion01_implosion_main.dds"
+ParticleEmitter29.Transparency = NumberSequence.new(1,0.75,0.65625,0.7749999761581421,1)
+ParticleEmitter29.ZOffset = 1
+ParticleEmitter29.Size = NumberSequence.new(2,2)
+ParticleEmitter29.Lifetime = NumberRange.new(2, 2)
+ParticleEmitter29.LockedToPart = true
+ParticleEmitter29.Rate = 2
+ParticleEmitter30.Name = "ChestEmitter"
+ParticleEmitter30.Parent = Part26
+ParticleEmitter30.Speed = NumberRange.new(0.20000000298023224, 0.4000000059604645)
+ParticleEmitter30.Color = ColorSequence.new(Color3.new(0.470588, 0.913725, 1),Color3.new(0.470588, 0.913725, 1))
+ParticleEmitter30.LightEmission = 0.5
+ParticleEmitter30.Texture = "rbxasset://textures/particles/explosion01_implosion_main.dds"
+ParticleEmitter30.Transparency = NumberSequence.new(1,0.48124998807907104,0.3062499761581421,0.5249999761581421,1)
+ParticleEmitter30.ZOffset = 1
+ParticleEmitter30.Size = NumberSequence.new(0.15000000596046448,0.15000000596046448)
+ParticleEmitter30.Lifetime = NumberRange.new(0.4000000059604645, 1.2000000476837158)
+ParticleEmitter30.Rate = 40
+Weld31.Name = "AccessoryWeld"
+Weld31.Parent = Part26
+Weld31.C0 = CFrame.new(0.0155530013, 0.0697362423, -0.231207669, 1, 9.9426878e-17, 7.14975415e-17, -1.21242258e-16, 0.721494079, 0.692420721, 1.7260174e-17, -0.692420721, 0.721494079)
+Weld31.C1 = CFrame.new(0, 0.600000024, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Weld31.Part0 = Part26
+Weld31.Part1 = Part1
+Weld31.part1 = Part1
+CharacterMesh32.Parent = Model0
+CharacterMesh32.BodyPart = Enum.BodyPart.RightArm
+CharacterMesh32.MeshId = 3344187627
+CharacterMesh32.OverlayTextureId = 3344320415
+CharacterMesh33.Parent = Model0
+CharacterMesh33.BodyPart = Enum.BodyPart.LeftArm
+CharacterMesh33.MeshId = 3343613177
+CharacterMesh33.OverlayTextureId = 3344320415
+CharacterMesh34.Parent = Model0
+CharacterMesh34.BodyPart = Enum.BodyPart.LeftLeg
+CharacterMesh34.MeshId = 3344184746
+CharacterMesh34.OverlayTextureId = 3344320415
+CharacterMesh35.Parent = Model0
+CharacterMesh35.BodyPart = Enum.BodyPart.Torso
+CharacterMesh35.MeshId = 3344193136
+CharacterMesh35.OverlayTextureId = 3344320415
+CharacterMesh36.Parent = Model0
+CharacterMesh36.BodyPart = Enum.BodyPart.RightLeg
+CharacterMesh36.MeshId = 3344190747
+CharacterMesh36.OverlayTextureId = 3344320415
+BodyColors37.Parent = Model0
+BodyColors37.HeadColor = BrickColor.new("Light orange")
+BodyColors37.HeadColor3 = Color3.new(0.917647, 0.721569, 0.572549)
+BodyColors37.LeftArmColor = BrickColor.new("Light orange")
+BodyColors37.LeftArmColor3 = Color3.new(0.917647, 0.721569, 0.572549)
+BodyColors37.LeftLegColor = BrickColor.new("Light orange")
+BodyColors37.LeftLegColor3 = Color3.new(0.917647, 0.721569, 0.572549)
+BodyColors37.RightArmColor = BrickColor.new("Light orange")
+BodyColors37.RightArmColor3 = Color3.new(0.917647, 0.721569, 0.572549)
+BodyColors37.RightLegColor = BrickColor.new("Light orange")
+BodyColors37.RightLegColor3 = Color3.new(0.917647, 0.721569, 0.572549)
+BodyColors37.TorsoColor = BrickColor.new("Light orange")
+BodyColors37.TorsoColor3 = Color3.new(0.917647, 0.721569, 0.572549)
+Shirt38.Name = "Shirt"
+Shirt38.Parent = Model0
+Shirt38.ShirtTemplate = "http://www.roblox.com/asset/?id=855777285"
+Pants39.Name = "Pants"
+Pants39.Parent = Model0
+Pants39.PantsTemplate = "http://www.roblox.com/asset/?id=867826313"
+Script40.Name = "Respawn"
+Script40.Parent = Model0
+table.insert(cors,sandbox(Script40,function()
+name="Humanoid"
+
+robo=script.Parent:clone()
+
+while true do
+	wait(1)
+	if script.Parent.Humanoid.Health<1 then
+		robot=robo:clone()
+		robot.Parent=script.Parent.Parent
+		robot:makeJoints()
+		script.Parent:remove()
+	end
+end
+		
+
+
+
+end))
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = workspace
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
